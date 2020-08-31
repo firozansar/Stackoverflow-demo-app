@@ -1,7 +1,8 @@
 package info.firozansari.stackoverflowapp.ui.main
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 
-class MainViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+class MainViewModel(application: Application): AndroidViewModel(application) {
+
 }
