@@ -1,54 +1,41 @@
 package info.firozansari.stackoverflowapp.ui.main
 
+import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import info.firozansari.stackoverflowapp.databinding.RowLayoutBinding
+import info.firozansari.stackoverflowapp.R
 import info.firozansari.stackoverflowapp.api.model.Question
+import kotlinx.android.synthetic.main.row_layout.view.*
 
-class QuestionAdapter (private val onClickListener: OnClickListener) : ListAdapter<Question, QuestionAdapter.MyViewHolder>(DiffCallback) {
 
-    var questionList = emptyList<Question>()
+class QuestionAdapter (private val onClickListener: OnClickListener) : ListAdapter<Question, QuestionAdapter.QuestionViewHolder>(DiffCallback) {
 
-    class MyViewHolder(private val binding: RowLayoutBinding) : RecyclerView.ViewHolder(binding.root){
-        fun bind(question: Question){
-            binding.question = question
-            binding.executePendingBindings()
-        }
-        companion object{
-            fun from(parent: ViewGroup): MyViewHolder {
-                val layoutInflater = LayoutInflater.from(parent.context)
-                val binding = RowLayoutBinding.inflate(layoutInflater, parent, false)
-                return MyViewHolder(
-                    binding
-                )
-            }
-        }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.row_layout, parent, false)
+        return QuestionViewHolder(view)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        return MyViewHolder.from(
-            parent
-        )
-    }
-
-    override fun getItemCount(): Int {
-        return questionList.size
-    }
-
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val currentQuestion = questionList[position]
+    override fun onBindViewHolder(holder: QuestionViewHolder, position: Int) {
+        val trailer = getItem(position)
         holder.itemView.setOnClickListener {
-            onClickListener.onClick(currentQuestion)
+            onClickListener.onClick(trailer)
         }
-        holder.bind(currentQuestion)
+        holder.bind(trailer)
     }
 
-    fun setData(questions: List<Question>){
-        this.questionList = questions
+    class QuestionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+        fun bind(question: Question) {
+           itemView.title_textView.text = question.title
+            itemView.votes_textView.text = "votes ${question.score}"
+        }
+
     }
+
 
     companion object DiffCallback : DiffUtil.ItemCallback<Question>() {
 

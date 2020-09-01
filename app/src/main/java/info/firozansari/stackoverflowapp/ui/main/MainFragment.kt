@@ -92,7 +92,7 @@ class MainFragment : Fragment() {
     private fun observeQuestions() {
         viewModel.questions.observe(viewLifecycleOwner, Observer {
             it?.let {
-                adapter.setData(it)
+                adapter.submitList(it)
             }
         })
     }

@@ -16,24 +16,19 @@ import javax.inject.Singleton
 @Module
 class ApiModule {
 
-    @Provides
-    fun provideStackoverflowService(retrofit: Retrofit): StackoverflowService {
-        return retrofit.create(StackoverflowService::class.java)
-    }
 
     @Provides
     @Singleton
-    fun provideRetrofit(
-        okHttpClient: OkHttpClient,
-        moshiConverterFactory: MoshiConverterFactory
-    ): Retrofit {
-        return Retrofit.Builder()
+    fun provideStackoverflowService(okHttpClient: OkHttpClient, moshiConverterFactory: MoshiConverterFactory): StackoverflowService =
+        Retrofit.Builder()
             .addConverterFactory(moshiConverterFactory)
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .baseUrl(STACKOVERFLOW_BASE_URL)
             .client(okHttpClient)
             .build()
-    }
+            .create(StackoverflowService::class.java)
+
+
 
     @Provides
     @Singleton

@@ -45,10 +45,9 @@ class MainViewModel @Inject constructor(private val stackoverflowRepository: Sta
     private fun getUnansweredQuestion() {
         // Using Coroutines
         coroutineScope.launch {
-            val date: Date = Date.from(ZonedDateTime.now().minusMonths(1).toInstant())
-            val time: Long = date.time
+            val fromDate: Date = Date.from(ZonedDateTime.now().minusMonths(1).toInstant())
             // Will get the topic/ tagged value and min votes dynamically in future
-            var getQuestionDeferred = stackoverflowRepository.getQuestions(time, 5, "android")
+            var getQuestionDeferred = stackoverflowRepository.getQuestions(fromDate.time, 5, "android")
             try {
                 _apiStatus.value = ApiStatus.LOADING
                 var apiResult = getQuestionDeferred.await()
