@@ -1,5 +1,6 @@
-package info.firozansari.stackoverflowapp.network
+package info.firozansari.stackoverflowapp.api
 
+import info.firozansari.stackoverflowapp.api.model.StackoverflowResponse
 import kotlinx.coroutines.Deferred
 import retrofit2.http.GET
 import retrofit2.http.Query

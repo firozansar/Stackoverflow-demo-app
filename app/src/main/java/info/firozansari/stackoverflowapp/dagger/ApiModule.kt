@@ -6,7 +6,7 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import info.firozansari.stackoverflowapp.STACKOVERFLOW_BASE_URL
-import info.firozansari.stackoverflowapp.network.StackoverflowService
+import info.firozansari.stackoverflowapp.api.StackoverflowService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -14,7 +14,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
 
 @Module
-class NetworkModule {
+class ApiModule {
 
     @Provides
     fun provideStackoverflowService(retrofit: Retrofit): StackoverflowService {

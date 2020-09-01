@@ -1,6 +1,7 @@
-package info.firozansari.stackoverflowapp.network
+package info.firozansari.stackoverflowapp.api.model
 
 import com.squareup.moshi.Json
+import info.firozansari.stackoverflowapp.api.model.Question
 
 data class StackoverflowResponse (
     @Json(name = "items") val listQuestions: List<Question>?,

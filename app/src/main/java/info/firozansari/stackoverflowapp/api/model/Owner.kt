@@ -1,4 +1,4 @@
-package info.firozansari.stackoverflowapp.network
+package info.firozansari.stackoverflowapp.api.model
 
 import com.squareup.moshi.Json
 
