@@ -7,9 +7,9 @@ import retrofit2.http.Query
 
 
 interface StackoverflowService {
-    @GET("questions/")
+    @GET("questions/unanswered")
     fun getQuestions(
-        @Query("formDate") formDate: Long = 1596240000,
+        @Query("formDate") formDate: Long,
         @Query("order") order: String = "desc",
         @Query("min") min: Int = 5,
         @Query("sort") sort: String = "votes",

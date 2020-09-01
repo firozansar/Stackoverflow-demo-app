@@ -1,8 +1,10 @@
 package info.firozansari.stackoverflowapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import info.firozansari.stackoverflowapp.ui.main.MainFragment
+import java.time.ZonedDateTime
+import java.util.Date
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,5 +16,7 @@ class MainActivity : AppCompatActivity() {
                     .replace(R.id.container, MainFragment.newInstance())
                     .commitNow()
         }
+        val date: Date = Date.from(ZonedDateTime.now().minusMonths(1).toInstant())
+        val time: Long = date.time
     }
 }

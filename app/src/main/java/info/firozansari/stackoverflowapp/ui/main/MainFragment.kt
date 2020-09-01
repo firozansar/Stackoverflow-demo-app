@@ -7,10 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import info.firozansari.stackoverflowapp.R
+import info.firozansari.stackoverflowapp.ViewModelFactory
+import javax.inject.Inject
 
 class MainFragment : Fragment() {
 
-    private val viewModel: MainViewModel by viewModels()
+    @Inject
+    internal lateinit var viewModelFactory: ViewModelFactory<MainViewModel>
+    private lateinit var viewModel: MainViewModel
 
     companion object {
         fun newInstance() = MainFragment()
