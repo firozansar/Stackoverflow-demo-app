@@ -13,5 +13,6 @@ data class Question(
     @Json(name = "question_id") val questionID: Long?,
     @Json(name = "creation_date") val creationDate: Long?,
     @Json(name = "last_activity_date") val lastActivityDate: Long?,
-    val title: String?
+    val title: String?,
+    val link: String?
 )

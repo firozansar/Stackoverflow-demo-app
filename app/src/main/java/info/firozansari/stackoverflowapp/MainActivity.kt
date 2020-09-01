@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
                     .replace(R.id.container, MainFragment.newInstance())
                     .commitNow()
         }
-        val date: Date = Date.from(ZonedDateTime.now().minusMonths(1).toInstant())
-        val time: Long = date.time
+
     }
 }
