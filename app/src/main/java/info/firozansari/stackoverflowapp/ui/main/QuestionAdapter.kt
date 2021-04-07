@@ -1,6 +1,5 @@
 package info.firozansari.stackoverflowapp.ui.main
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +11,8 @@ import info.firozansari.stackoverflowapp.api.model.Question
 import kotlinx.android.synthetic.main.row_layout.view.*
 
 
-class QuestionAdapter (private val onClickListener: OnClickListener) : ListAdapter<Question, QuestionAdapter.QuestionViewHolder>(DiffCallback) {
+class QuestionAdapter(private val onClickListener: OnClickListener) :
+    ListAdapter<Question, QuestionAdapter.QuestionViewHolder>(DiffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.row_layout, parent, false)
@@ -30,7 +30,7 @@ class QuestionAdapter (private val onClickListener: OnClickListener) : ListAdapt
     class QuestionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(question: Question) {
-           itemView.title_textView.text = question.title
+            itemView.title_textView.text = question.title
             itemView.votes_textView.text = "votes ${question.score}"
         }
 

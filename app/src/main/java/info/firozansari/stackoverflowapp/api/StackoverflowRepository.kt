@@ -5,9 +5,13 @@ import kotlinx.coroutines.Deferred
 import javax.inject.Inject
 
 
-class StackoverflowRepository  @Inject constructor(private val stackoverflowService: StackoverflowService) {
+class StackoverflowRepository @Inject constructor(private val stackoverflowService: StackoverflowService) {
 
-    fun getQuestions(formDate: Long, minVotes: Int, tagged: String): Deferred<StackoverflowResponse> =
+    fun getQuestions(
+        formDate: Long,
+        minVotes: Int,
+        tagged: String
+    ): Deferred<StackoverflowResponse> =
         stackoverflowService.getQuestions(
             formDate,
             "desc",
@@ -15,5 +19,5 @@ class StackoverflowRepository  @Inject constructor(private val stackoverflowServ
             "votes",
             "stackoverflow",
             tagged
-            )
+        )
 }

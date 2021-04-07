@@ -11,12 +11,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import java.time.ZonedDateTime
-import java.util.Date
+import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
 
 
-class MainViewModel @Inject constructor(private val stackoverflowRepository: StackoverflowRepository): ViewModel()  {
+class MainViewModel @Inject constructor(private val stackoverflowRepository: StackoverflowRepository) :
+    ViewModel() {
 
     // The most recent API response
     private val _apiStatus = MutableLiveData<ApiStatus>()
@@ -36,7 +37,8 @@ class MainViewModel @Inject constructor(private val stackoverflowRepository: Sta
 
     // A coroutine scope for that new job using the main dispatcher
     private val coroutineScope = CoroutineScope(
-        viewModelJob + Dispatchers.Main )
+        viewModelJob + Dispatchers.Main
+    )
 
     init {
         getUnansweredQuestion()
@@ -47,7 +49,8 @@ class MainViewModel @Inject constructor(private val stackoverflowRepository: Sta
         coroutineScope.launch {
             val fromDate: Date = Date.from(ZonedDateTime.now().minusMonths(1).toInstant())
             // Will get the topic/ tagged value and min votes dynamically in future
-            var getQuestionDeferred = stackoverflowRepository.getQuestions(fromDate.time, 5, "android")
+            var getQuestionDeferred =
+                stackoverflowRepository.getQuestions(fromDate.time, 5, "android")
             try {
                 _apiStatus.value = ApiStatus.LOADING
                 var apiResult = getQuestionDeferred.await()

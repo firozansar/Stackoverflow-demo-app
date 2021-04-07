@@ -3,7 +3,7 @@ package info.firozansari.stackoverflowapp.dagger
 import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
-import info.firozansari.stackoverflowapp.MainActivity
+import info.firozansari.stackoverflowapp.ui.main.MainActivity
 import info.firozansari.stackoverflowapp.ui.main.MainFragment
 import javax.inject.Singleton
 

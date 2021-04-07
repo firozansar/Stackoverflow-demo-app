@@ -1,4 +1,4 @@
-package info.firozansari.stackoverflowapp
+package info.firozansari.stackoverflowapp.util
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

@@ -1,7 +1,6 @@
 package info.firozansari.stackoverflowapp.api.model
 
 import com.squareup.moshi.Json
-import info.firozansari.stackoverflowapp.api.model.Owner
 
 data class Question(
     val tags: List<String>?,

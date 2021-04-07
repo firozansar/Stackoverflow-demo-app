@@ -11,10 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import info.firozansari.stackoverflowapp.MainApplication
 import info.firozansari.stackoverflowapp.R
-import info.firozansari.stackoverflowapp.ViewModelFactory
 import info.firozansari.stackoverflowapp.api.ApiStatus
+import info.firozansari.stackoverflowapp.ui.MainApplication
+import info.firozansari.stackoverflowapp.util.ViewModelFactory
 import kotlinx.android.synthetic.main.main_fragment.*
 import javax.inject.Inject
 
