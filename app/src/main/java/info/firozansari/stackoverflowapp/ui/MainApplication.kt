@@ -1,8 +1,8 @@
 package info.firozansari.stackoverflowapp.ui
 
 import android.app.Application
-import info.firozansari.stackoverflowapp.dagger.AppComponent
-import info.firozansari.stackoverflowapp.dagger.DaggerAppComponent
+import info.firozansari.stackoverflowapp.di.AppComponent
+import info.firozansari.stackoverflowapp.di.DaggerAppComponent
 
 open class MainApplication : Application() {
 

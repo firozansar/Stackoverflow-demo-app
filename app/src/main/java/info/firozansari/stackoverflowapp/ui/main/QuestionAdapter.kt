@@ -36,7 +36,6 @@ class QuestionAdapter(private val onClickListener: OnClickListener) :
 
     }
 
-
     companion object DiffCallback : DiffUtil.ItemCallback<Question>() {
 
         override fun areItemsTheSame(oldItem: Question, newItem: Question): Boolean {
@@ -51,6 +50,5 @@ class QuestionAdapter(private val onClickListener: OnClickListener) :
     class OnClickListener(val clickListener: (question: Question) -> Unit) {
         fun onClick(question: Question) = clickListener(question)
     }
-
 
 }

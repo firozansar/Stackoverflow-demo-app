@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "StackoverflowApp"
+rootProject.name = "StackOverflow-demo-app"

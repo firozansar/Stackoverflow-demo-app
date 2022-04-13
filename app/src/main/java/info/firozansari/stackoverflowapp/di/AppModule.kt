@@ -1,4 +1,4 @@
-package info.firozansari.stackoverflowapp.dagger
+package info.firozansari.stackoverflowapp.di
 
 import android.app.Application
 import android.content.Context

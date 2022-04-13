@@ -1,4 +1,4 @@
-package info.firozansari.stackoverflowapp.dagger
+package info.firozansari.stackoverflowapp.di
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi

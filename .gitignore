@@ -29,3 +29,9 @@ proguard/
 *.iml
 
 .DS_Store
+
+**/.project
+**/.settings
+**/.classpath
+
+.vscode

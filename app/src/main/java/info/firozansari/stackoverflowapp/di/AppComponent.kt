@@ -1,4 +1,4 @@
-package info.firozansari.stackoverflowapp.dagger
+package info.firozansari.stackoverflowapp.di
 
 import android.content.Context
 import dagger.BindsInstance
