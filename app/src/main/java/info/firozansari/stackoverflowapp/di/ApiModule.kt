@@ -6,7 +6,6 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import info.firozansari.stackoverflowapp.api.StackoverflowService
-import info.firozansari.stackoverflowapp.util.STACKOVERFLOW_BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -45,3 +44,5 @@ class ApiModule {
         return httpLoggingInterceptor
     }
 }
+
+const val STACKOVERFLOW_BASE_URL = "https://api.stackexchange.com/2.2/"
