@@ -8,21 +8,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import info.firozansari.stackoverflowapp.R
 import info.firozansari.stackoverflowapp.api.ApiStatus
 import info.firozansari.stackoverflowapp.ui.MainApplication
-import info.firozansari.stackoverflowapp.util.ViewModelFactory
 import kotlinx.android.synthetic.main.main_fragment.*
 import javax.inject.Inject
 
 class MainFragment : Fragment() {
 
-    @Inject
-    internal lateinit var viewModelFactory: ViewModelFactory<MainViewModel>
-    private lateinit var viewModel: MainViewModel
+    private val viewModel: MainViewModel by viewModels()
 
     private val adapter: QuestionAdapter by lazy {
         QuestionAdapter(QuestionAdapter.OnClickListener {
@@ -54,11 +51,7 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
-        viewModel = ViewModelProvider(this, viewModelFactory).get(MainViewModel::class.java)
-
         setupRecyclerView()
-
         observeApiStatus()
     }
 

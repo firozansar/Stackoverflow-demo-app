@@ -16,7 +16,6 @@ import javax.inject.Singleton
 @Module
 class ApiModule {
 
-
     @Provides
     @Singleton
     fun provideStackoverflowService(
