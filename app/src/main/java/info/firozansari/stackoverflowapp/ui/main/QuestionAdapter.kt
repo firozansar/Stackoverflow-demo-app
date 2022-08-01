@@ -1,39 +1,31 @@
 package info.firozansari.stackoverflowapp.ui.main
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import info.firozansari.stackoverflowapp.R
 import info.firozansari.stackoverflowapp.api.model.Question
-import kotlinx.android.synthetic.main.row_layout.view.*
+import info.firozansari.stackoverflowapp.databinding.RowLayoutBinding
 
 
 class QuestionAdapter(private val onClickListener: OnClickListener) :
     ListAdapter<Question, QuestionAdapter.QuestionViewHolder>(DiffCallback) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.row_layout, parent, false)
-        return QuestionViewHolder(view)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionViewHolder =
+        QuestionViewHolder(RowLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false))
 
     override fun onBindViewHolder(holder: QuestionViewHolder, position: Int) {
-        val trailer = getItem(position)
-        holder.itemView.setOnClickListener {
-            onClickListener.onClick(trailer)
-        }
-        holder.bind(trailer)
+        holder.bind(getItem(position))
     }
 
-    class QuestionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class QuestionViewHolder(
+        private val binding: RowLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(question: Question) {
-            itemView.title_textView.text = question.title
-            itemView.votes_textView.text = "votes ${question.score}"
+        fun bind(question: Question) = binding.apply {
+            titleText.text = question.title
+            votesText.text = "votes ${question.score}"
         }
-
     }
 
     companion object DiffCallback : DiffUtil.ItemCallback<Question>() {
@@ -50,5 +42,4 @@ class QuestionAdapter(private val onClickListener: OnClickListener) :
     class OnClickListener(val clickListener: (question: Question) -> Unit) {
         fun onClick(question: Question) = clickListener(question)
     }
-
 }

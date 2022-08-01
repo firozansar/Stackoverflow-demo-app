@@ -1,10 +1,10 @@
 package info.firozansari.stackoverflowapp.di
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import info.firozansari.stackoverflowapp.api.StackoverflowService
 import info.firozansari.stackoverflowapp.util.STACKOVERFLOW_BASE_URL
 import okhttp3.OkHttpClient
@@ -14,16 +14,16 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
 
 @Module
+@InstallIn(SingletonComponent::class)
 class ApiModule {
 
     @Provides
     @Singleton
     fun provideStackoverflowService(
-        okHttpClient: OkHttpClient,
-        moshiConverterFactory: MoshiConverterFactory
+        okHttpClient: OkHttpClient
     ): StackoverflowService =
         Retrofit.Builder()
-            .addConverterFactory(moshiConverterFactory)
+            .addConverterFactory(MoshiConverterFactory.create())
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .baseUrl(STACKOVERFLOW_BASE_URL)
             .client(okHttpClient)
@@ -44,12 +44,4 @@ class ApiModule {
         httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         return httpLoggingInterceptor
     }
-
-    @Provides
-    @Singleton
-    fun provideMoshiConverterFactory(): MoshiConverterFactory {
-        val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
-        return MoshiConverterFactory.create(moshi)
-    }
-
 }

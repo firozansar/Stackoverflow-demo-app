@@ -8,7 +8,7 @@
     android:layout_margin="4dp">
 
         <TextView
-            android:id="@+id/title_textView"
+            android:id="@+id/titleText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -20,7 +20,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/votes_textView"
+            android:id="@+id/votesText"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -30,7 +30,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.939"
-            app:layout_constraintStart_toEndOf="@+id/title_textView"
+            app:layout_constraintStart_toEndOf="@+id/titleText"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

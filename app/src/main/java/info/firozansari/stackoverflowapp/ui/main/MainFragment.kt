@@ -1,6 +1,5 @@
 package info.firozansari.stackoverflowapp.ui.main
 
-import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -10,19 +9,35 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import info.firozansari.stackoverflowapp.R
 import info.firozansari.stackoverflowapp.api.ApiStatus
-import info.firozansari.stackoverflowapp.ui.MainApplication
-import kotlinx.android.synthetic.main.main_fragment.*
-import javax.inject.Inject
+import info.firozansari.stackoverflowapp.databinding.MainFragmentBinding
 
+@AndroidEntryPoint
 class MainFragment : Fragment() {
 
+    private var _binding: MainFragmentBinding? = null
+    private val binding get() = _binding!!
     private val viewModel: MainViewModel by viewModels()
+    private lateinit var  adapter: QuestionAdapter
 
-    private val adapter: QuestionAdapter by lazy {
-        QuestionAdapter(QuestionAdapter.OnClickListener {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = MainFragmentBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
+        adapter = QuestionAdapter(QuestionAdapter.OnClickListener {
             requireActivity().startActivity(
                 Intent(
                     Intent.ACTION_VIEW,
@@ -30,34 +45,10 @@ class MainFragment : Fragment() {
                 )
             )
         })
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        (requireActivity().application as MainApplication).appComponent.inject(this)
-    }
-
-
-    companion object {
-        fun newInstance() = MainFragment()
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        setupRecyclerView()
+        binding.recyclerView.apply {
+            adapter = adapter
+        }
         observeApiStatus()
-    }
-
-    private fun setupRecyclerView() {
-        recyclerView.layoutManager = LinearLayoutManager(this.context)
-        recyclerView.adapter = adapter
     }
 
     private fun observeApiStatus() {
@@ -65,18 +56,17 @@ class MainFragment : Fragment() {
             it?.let {
                 when (it) {
                     ApiStatus.LOADING -> {
-                        status_imageView.visibility = View.VISIBLE
-                        status_imageView.setImageResource(R.drawable.loading_animation)
+                        binding.statusView.visibility = View.VISIBLE
+                        binding.statusView.setImageResource(R.drawable.loading_animation)
                     }
                     ApiStatus.ERROR -> {
-                        status_imageView.visibility = View.VISIBLE
-                        status_imageView.setImageResource(R.drawable.ic_connection_error)
+                        binding.statusView.visibility = View.VISIBLE
+                        binding.statusView.setImageResource(R.drawable.ic_connection_error)
                     }
                     ApiStatus.DONE -> {
-                        status_imageView.visibility = View.GONE
+                        binding.statusView.visibility = View.GONE
                         observeQuestions()
                     }
-
                 }
             }
         })
@@ -90,4 +80,7 @@ class MainFragment : Fragment() {
         })
     }
 
+    companion object {
+        fun newInstance() = MainFragment()
+    }
 }

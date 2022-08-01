@@ -3,6 +3,7 @@ package info.firozansari.stackoverflowapp.ui.main
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
 import info.firozansari.stackoverflowapp.api.ApiStatus
 import info.firozansari.stackoverflowapp.api.StackoverflowRepository
 import info.firozansari.stackoverflowapp.api.model.Question
@@ -15,7 +16,7 @@ import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
 
-
+@HiltViewModel
 class MainViewModel @Inject constructor(private val stackoverflowRepository: StackoverflowRepository) :
     ViewModel() {
 

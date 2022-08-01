@@ -1,0 +1,815 @@
+[
+    {
+        "items": [
+            {
+                "tags": [
+                    "java",
+                    "android",
+                    "parse-platform",
+                    "logcat"
+                ],
+                "owner": {
+                    "reputation": 897,
+                    "user_id": 5661561,
+                    "user_type": "registered",
+                    "accept_rate": 90,
+                    "profile_image": "https://www.gravatar.com/avatar/03e1dcff47ff30d6bdbf704c3d11f2ab?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "ArtanisAce",
+                    "link": "https://stackoverflow.com/users/5661561/artanisace"
+                },
+                "is_answered": false,
+                "view_count": 3490,
+                "answer_count": 0,
+                "score": 80,
+                "last_activity_date": 1653983642,
+                "creation_date": 1450017182,
+                "last_edit_date": 1653983642,
+                "question_id": 34252188,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/34252188/logcat-error-message-attempted-to-destroy-barrier-with-non-zero-count",
+                "title": "Logcat error message - Attempted to destroy barrier with non zero count"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-7.1-nougat"
+                ],
+                "owner": {
+                    "reputation": 1191,
+                    "user_id": 5479131,
+                    "user_type": "registered",
+                    "profile_image": "https://i.stack.imgur.com/20wbo.png?s=256&g=1",
+                    "display_name": "KUSHA B K",
+                    "link": "https://stackoverflow.com/users/5479131/kusha-b-k"
+                },
+                "is_answered": false,
+                "view_count": 7905,
+                "answer_count": 0,
+                "score": 50,
+                "last_activity_date": 1554024339,
+                "creation_date": 1492750747,
+                "last_edit_date": 1554024339,
+                "question_id": 43534272,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/43534272/e-libegl-validate-display99-error-3008-egl-bad-display-android-os-7-1-nougat",
+                "title": "E/libEGL: validate_display:99 error 3008 (EGL_BAD_DISPLAY) android os 7.1 nougat"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-ndk",
+                    "gdb",
+                    "gdbserver"
+                ],
+                "owner": {
+                    "reputation": 3962,
+                    "user_id": 1547399,
+                    "user_type": "registered",
+                    "accept_rate": 87,
+                    "profile_image": "https://i.stack.imgur.com/zbq8V.jpg?s=256&g=1",
+                    "display_name": "Joey.Z",
+                    "link": "https://stackoverflow.com/users/1547399/joey-z"
+                },
+                "is_answered": false,
+                "view_count": 675,
+                "answer_count": 0,
+                "score": 49,
+                "last_activity_date": 1648717489,
+                "creation_date": 1517799793,
+                "last_edit_date": 1648717489,
+                "question_id": 48615324,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/48615324/android-ndk-gdb-loaded-sharedlibraries-missing-oat",
+                "title": "android ndk gdb loaded sharedlibraries missing *.oat"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-testing",
+                    "android-espresso"
+                ],
+                "owner": {
+                    "reputation": 997,
+                    "user_id": 829900,
+                    "user_type": "registered",
+                    "profile_image": "https://i.stack.imgur.com/fBSBq.jpg?s=256&g=1",
+                    "display_name": "Crisic",
+                    "link": "https://stackoverflow.com/users/829900/crisic"
+                },
+                "is_answered": false,
+                "view_count": 898,
+                "answer_count": 1,
+                "score": 41,
+                "last_activity_date": 1600493283,
+                "creation_date": 1504629391,
+                "last_edit_date": 1508767285,
+                "question_id": 46059677,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/46059677/registeridlingresources-deprecation-replacement-doesnt-work",
+                "title": "registerIdlingResources deprecation replacement doesn&#39;t work"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-intent"
+                ],
+                "owner": {
+                    "reputation": 15028,
+                    "user_id": 507313,
+                    "user_type": "registered",
+                    "accept_rate": 75,
+                    "profile_image": "https://www.gravatar.com/avatar/b8b097f0a88ab346a912b74fda4c57cf?s=256&d=identicon&r=PG",
+                    "display_name": "StuStirling",
+                    "link": "https://stackoverflow.com/users/507313/stustirling"
+                },
+                "is_answered": false,
+                "view_count": 769,
+                "answer_count": 2,
+                "score": 40,
+                "last_activity_date": 1579759441,
+                "creation_date": 1451926534,
+                "last_edit_date": 1452550991,
+                "question_id": 34595995,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/34595995/fileprovider-in-android-4-1-4-3-4-4-email-app-fails-with-column-data-does-not",
+                "title": "FileProvider in Android 4.1/4.3/4.4 Email App fails with column &#39;_data&#39; does not exist"
+            },
+            {
+                "tags": [
+                    "android",
+                    "firebase",
+                    "performance",
+                    "android-anr-dialog",
+                    "android-looper"
+                ],
+                "owner": {
+                    "reputation": 905,
+                    "user_id": 6947528,
+                    "user_type": "registered",
+                    "profile_image": "https://www.gravatar.com/avatar/1be141ad6674056c46d8112ed237f95e?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "Harminder Singh",
+                    "link": "https://stackoverflow.com/users/6947528/harminder-singh"
+                },
+                "is_answered": false,
+                "view_count": 2954,
+                "answer_count": 0,
+                "score": 39,
+                "last_activity_date": 1650351536,
+                "creation_date": 1647327885,
+                "last_edit_date": 1647328382,
+                "question_id": 71478162,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/71478162/anr-at-android-os-messagequeue-nativepollonce",
+                "title": "ANR at android.os.MessageQueue.nativePollOnce"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-listview",
+                    "android-asynctask",
+                    "android-viewholder",
+                    "getview"
+                ],
+                "owner": {
+                    "reputation": 6478,
+                    "user_id": 1859489,
+                    "user_type": "registered",
+                    "accept_rate": 71,
+                    "profile_image": "https://i.stack.imgur.com/OKyW3.jpg?s=256&g=1",
+                    "display_name": "Sun",
+                    "link": "https://stackoverflow.com/users/1859489/sun"
+                },
+                "is_answered": false,
+                "view_count": 1233,
+                "answer_count": 3,
+                "score": 37,
+                "last_activity_date": 1654499785,
+                "creation_date": 1429348949,
+                "last_edit_date": 1446462786,
+                "question_id": 29715351,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/29715351/showing-status-for-the-last-list-item-in-a-listview-using-viewholder",
+                "title": "Showing status for the last list item in a ListView using ViewHolder"
+            },
+            {
+                "tags": [
+                    "android",
+                    "intellij-idea",
+                    "react-native"
+                ],
+                "owner": {
+                    "reputation": 2337,
+                    "user_id": 2532762,
+                    "user_type": "registered",
+                    "accept_rate": 44,
+                    "profile_image": "https://www.gravatar.com/avatar/5aca704faba346422452ecd86093a5f1?s=256&d=identicon&r=PG",
+                    "display_name": "1mike12",
+                    "link": "https://stackoverflow.com/users/2532762/1mike12"
+                },
+                "is_answered": false,
+                "view_count": 1339,
+                "answer_count": 1,
+                "score": 36,
+                "last_activity_date": 1569340103,
+                "creation_date": 1478145783,
+                "last_edit_date": 1569340103,
+                "question_id": 40393680,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/40393680/how-do-i-setup-java-code-completion-for-a-react-native-project-on-intellij",
+                "title": "How do I setup java code completion for a react native project on intellij?"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-5.0-lollipop",
+                    "shared-element-transition",
+                    "activity-transition"
+                ],
+                "owner": {
+                    "reputation": 772,
+                    "user_id": 1660283,
+                    "user_type": "registered",
+                    "accept_rate": 75,
+                    "profile_image": "https://www.gravatar.com/avatar/59776c19a547d4649fae78f54bc5a0c2?s=256&d=identicon&r=PG",
+                    "display_name": "OferM",
+                    "link": "https://stackoverflow.com/users/1660283/oferm"
+                },
+                "is_answered": false,
+                "view_count": 1986,
+                "answer_count": 1,
+                "score": 36,
+                "last_activity_date": 1558611097,
+                "creation_date": 1449755577,
+                "last_edit_date": 1504619647,
+                "question_id": 34203657,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/34203657/crash-in-activity-transitions-with-sharedelement",
+                "title": "Crash in Activity Transitions with SharedElement"
+            },
+            {
+                "tags": [
+                    "android",
+                    "debugging",
+                    "interrupted-exception"
+                ],
+                "owner": {
+                    "reputation": 4617,
+                    "user_id": 1151242,
+                    "user_type": "registered",
+                    "accept_rate": 67,
+                    "profile_image": "https://i.stack.imgur.com/rKwEv.jpg?s=256&g=1",
+                    "display_name": "Marcel Bro",
+                    "link": "https://stackoverflow.com/users/1151242/marcel-bro"
+                },
+                "is_answered": false,
+                "view_count": 1944,
+                "answer_count": 2,
+                "score": 35,
+                "last_activity_date": 1653771143,
+                "creation_date": 1440695902,
+                "question_id": 32255666,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/32255666/interruptedexception-when-debugging-android-app",
+                "title": "InterruptedException when debugging Android app"
+            },
+            {
+                "tags": [
+                    "android",
+                    "google-cloud-messaging",
+                    "http-status-code-401",
+                    "unauthorized"
+                ],
+                "owner": {
+                    "reputation": 1032,
+                    "user_id": 1689780,
+                    "user_type": "registered",
+                    "accept_rate": 78,
+                    "profile_image": "https://www.gravatar.com/avatar/c87b2116de493257c80a4ef8f3bd3bd1?s=256&d=identicon&r=PG",
+                    "display_name": "Jake Braun",
+                    "link": "https://stackoverflow.com/users/1689780/jake-braun"
+                },
+                "is_answered": false,
+                "view_count": 1698,
+                "answer_count": 1,
+                "score": 34,
+                "last_activity_date": 1448889915,
+                "creation_date": 1396446220,
+                "last_edit_date": 1398264391,
+                "question_id": 22813411,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/22813411/intermittent-401-unauthorized-from-google-gcm",
+                "title": "Intermittent 401 Unauthorized from Google GCM"
+            },
+            {
+                "tags": [
+                    "android",
+                    "alarmmanager",
+                    "android-jobscheduler"
+                ],
+                "owner": {
+                    "reputation": 9883,
+                    "user_id": 4070848,
+                    "user_type": "registered",
+                    "accept_rate": 39,
+                    "profile_image": "https: //www.gravatar.com/avatar/31fe13f7a7a5f15157af09dc81b07bf0?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "drmrbrewer",
+                    "link": "https://stackoverflow.com/users/4070848/drmrbrewer"
+                },
+                "is_answered": false,
+                "view_count": 2541,
+                "answer_count": 1,
+                "score": 34,
+                "last_activity_date": 1486110809,
+                "creation_date": 1473233596,
+                "last_edit_date": 1495539930,
+                "question_id": 39363839,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/39363839/jobscheduler-controlling-delay-from-constraints-being-met-to-job-being-run",
+                "title": "JobScheduler: controlling delay from constraints being met to job being run"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-activity",
+                    "orientation",
+                    "screen-orientation",
+                    "android-orientation"
+                ],
+                "owner": {
+                    "reputation": 413,
+                    "user_id": 1785984,
+                    "user_type": "registered",
+                    "profile_image": "https://www.gravatar.com/avatar/075535590d257b62727f0d812ee97dbd?s=256&d=identicon&r=PG",
+                    "display_name": "moorka",
+                    "link": "https://stackoverflow.com/users/1785984/moorka"
+                },
+                "is_answered": false,
+                "view_count": 4921,
+                "answer_count": 2,
+                "score": 34,
+                "last_activity_date": 1626414876,
+                "creation_date": 1355930796,
+                "last_edit_date": 1580033183,
+                "question_id": 13955606,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/13955606/why-has-androidscreenorientation-behind-no-effect-in-android-4-1-2",
+                "title": "Why has `android:screenOrientation=&quot;behind&quot;` no effect in android 4.1.2?"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-recyclerview"
+                ],
+                "owner": {
+                    "reputation": 2511,
+                    "user_id": 2487124,
+                    "user_type": "registered",
+                    "accept_rate": 50,
+                    "profile_image": "https://www.gravatar.com/avatar/b1c8041cadd95166f2382c0019b0d51e?s=256&d=identicon&r=PG",
+                    "display_name": "Gak2",
+                    "link": "https://stackoverflow.com/users/2487124/gak2"
+                },
+                "is_answered": false,
+                "view_count": 6453,
+                "answer_count": 5,
+                "score": 34,
+                "last_activity_date": 1619945986,
+                "creation_date": 1487283886,
+                "last_edit_date": 1619945986,
+                "question_id": 42285850,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/42285850/horizontal-recyclerview-with-items-that-have-dynamic-height",
+                "title": "Horizontal RecyclerView with items that have dynamic height"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-architecture-navigation"
+                ],
+                "owner": {
+                    "reputation": 441,
+                    "user_id": 11228262,
+                    "user_type": "registered",
+                    "profile_image": "https://www.gravatar.com/avatar/77fdb56cde010b79f463db28efe01c15?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "Tung Nguyen Thanh",
+                    "link": "https://stackoverflow.com/users/11228262/tung-nguyen-thanh"
+                },
+                "is_answered": false,
+                "view_count": 1161,
+                "answer_count": 3,
+                "score": 33,
+                "last_activity_date": 1654516250,
+                "creation_date": 1553020916,
+                "last_edit_date": 1553025142,
+                "question_id": 55247986,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/55247986/only-allow-one-instance-when-navigate-with-navcontroller",
+                "title": "Only allow one instance when navigate with NavController"
+            },
+            {
+                "tags": [
+                    "android",
+                    "deep-linking",
+                    "android-navigation"
+                ],
+                "owner": {
+                    "reputation": 9555,
+                    "user_id": 4415642,
+                    "user_type": "registered",
+                    "accept_rate": 30,
+                    "profile_image": "https://www.gravatar.com/avatar/253d1dc6571ed728099ff96b693f5b8f?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "Michał Ziobro",
+                    "link": "https://stackoverflow.com/users/4415642/micha%c5%82-ziobro"
+                },
+                "is_answered": false,
+                "view_count": 2700,
+                "answer_count": 0,
+                "score": 33,
+                "last_activity_date": 1606908539,
+                "creation_date": 1533109962,
+                "question_id": 51628081,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/51628081/multiple-navigation-graphs-in-android-and-deep-links",
+                "title": "Multiple Navigation Graphs in Android and Deep Links"
+            },
+            {
+                "tags": [
+                    "android",
+                    "mobile",
+                    "xamarin.forms",
+                    "renderer"
+                ],
+                "owner": {
+                    "reputation": 1263,
+                    "user_id": 8360272,
+                    "user_type": "registered",
+                    "accept_rate": 42,
+                    "profile_image": "https://i.stack.imgur.com/gH0Kr.jpg?s=256&g=1",
+                    "display_name": "Joyce de Lanna",
+                    "link": "https://stackoverflow.com/users/8360272/joyce-de-lanna"
+                },
+                "is_answered": false,
+                "view_count": 1510,
+                "answer_count": 1,
+                "score": 33,
+                "last_activity_date": 1587327975,
+                "creation_date": 1522704473,
+                "last_edit_date": 1587326,
+                "question_id": 49619076,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/49619076/defaultrenderer-error-in-xamarin-forms-android",
+                "title": "DefaultRenderer error in xamarin.forms (Android)"
+            },
+            {
+                "tags": [
+                    "android",
+                    "testing",
+                    "android-context",
+                    "instrumentation"
+                ],
+                "owner": {
+                    "reputation": 1371,
+                    "user_id": 2334509,
+                    "user_type": "registered",
+                    "accept_rate": 25,
+                    "profile_image": "https://www.gravatar.com/avatar/fae39be57d61b1d6b08683ba7e6624fa?s=256&d=identicon&r=PG",
+                    "display_name": "mato",
+                    "link": "https://stackoverflow.com/users/2334509/mato"
+                },
+                "is_answered": false,
+                "view_count": 1473,
+                "answer_count": 1,
+                "score": 33,
+                "last_activity_date": 1503334331,
+                "creation_date": 1396014358,
+                "last_edit_date": 1433759956,
+                "question_id": 22714624,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/22714624/write-create-file-within-android-instrumentation-context",
+                "title": "Write/create file within Android Instrumentation context"
+            },
+            {
+                "tags": [
+                    "android",
+                    "binary",
+                    "overflow",
+                    "android-4.4-kitkat"
+                ],
+                "owner": {
+                    "reputation": 341,
+                    "user_id": 1389831,
+                    "user_type": "registered",
+                    "profile_image": "https://www.gravatar.com/avatar/db94c8197685d35f9eed01b7d620e296?s=256&d=identicon&r=PG",
+                    "display_name": "Rhystic",
+                    "link": "https://stackoverflow.com/users/1389831/rhystic"
+                },
+                "is_answered": false,
+                "view_count": 6541,
+                "answer_count": 3,
+                "score": 33,
+                "last_activity_date": 1580076075,
+                "creation_date": 1391364691,
+                "last_edit_date": 1391365795,
+                "question_id": 21514259,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/21514259/android-couldnt-log-to-binary-event-log-overflow",
+                "title": "Android &quot;couldn&#39;t log to binary event log: overflow&quot;"
+            },
+            {
+                "tags": [
+                    "android",
+                    "accessibility"
+                ],
+                "owner": {
+                    "reputation": 359,
+                    "user_id": 3744402,
+                    "user_type": "registered",
+                    "profile_image": "https://www.gravatar.com/avatar/21795a5493d0176128ace2924898f3cd?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "kyo171",
+                    "link": "https://stackoverflow.com/users/3744402/kyo171"
+                },
+                "is_answered": false,
+                "view_count": 2209,
+                "answer_count": 1,
+                "score": 33,
+                "last_activity_date": 1625221540,
+                "creation_date": 1434013974,
+                "last_edit_date": 1625221540,
+                "question_id": 30776439,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/30776439/accessibility-focus-of-childviews-in-nestedscrollview",
+                "title": "Accessibility focus of childviews in nestedscrollview"
+            },
+            {
+                "tags": [
+                    "java",
+                    "android",
+                    "linux",
+                    "android-emulator",
+                    "android-source"
+                ],
+                "owner": {
+                    "reputation": 625,
+                    "user_id": 7809145,
+                    "user_type": "registered",
+                    "accept_rate": 86,
+                    "profile_image": "https://www.gravatar.com/avatar/8b4831fc604f6362cc4cc253ccdf4065?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "krupal.agile",
+                    "link": "https://stackoverflow.com/users/7809145/krupal-agile"
+                },
+                "is_answered": false,
+                "view_count": 1473,
+                "answer_count": 0,
+                "score": 31,
+                "last_activity_date": 1532341100,
+                "creation_date": 1531725208,
+                "last_edit_date": 1532341100,
+                "question_id": 51356404,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/51356404/generated-system-img-not-running-on-emulator",
+                "title": "Generated system.img not running on emulator"
+            },
+            {
+                "tags": [
+                    "android",
+                    "crash",
+                    "android-webview",
+                    "samsung-mobile"
+                ],
+                "owner": {
+                    "reputation": 4613,
+                    "user_id": 315702,
+                    "user_type": "registered",
+                    "accept_rate": 88,
+                    "profile_image": "https://www.gravatar.com/avatar/714b68c7bd219bd9d4b777ba6d9f401d?s=256&d=identicon&r=PG",
+                    "display_name": "Mark McClelland",
+                    "link": "https://stackoverflow.com/users/315702/mark-mcclelland"
+                },
+                "is_answered": false,
+                "view_count": 1863,
+                "answer_count": 0,
+                "score": 31,
+                "last_activity_date": 1450839205,
+                "creation_date": 1450839205,
+                "question_id": 34427893,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/34427893/webview-native-crash-libwebviewchromium-so-operation-not-permitted-ill-illo",
+                "title": "WebView native crash: libwebviewchromium.so &quot;Operation not permitted&quot; - ILL_ILLOPC"
+            },
+            {
+                "tags": [
+                    "android",
+                    "android-emulator",
+                    "avd"
+                ],
+                "owner": {
+                    "reputation": 864,
+                    "user_id": 1689145,
+                    "user_type": "registered",
+                    "accept_rate": 45,
+                    "profile_image": "https://www.gravatar.com/ava",
+                    "display_name": "Wamiq",
+                    "link": "https://stackoverflow.com/users/1689145/wamiq"
+                },
+                "is_answered": false,
+                "view_count": 1717,
+                "answer_count": 2,
+                "score": 31,
+                "last_activity_date": 1645447798,
+                "creation_date": 1596874851,
+                "question_id": 63313236,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/63313236/height-of-the-status-bar-increased-weirdly-inside-the-android-emulator-avd",
+                "title": "Height of the status bar increased weirdly inside the android emulator (AVD)"
+            },
+            {
+                "tags": [
+                    "android",
+                    "google-goggles"
+                ],
+                "owner": {
+                    "reputation": 475,
+                    "user_id": 685847,
+                    "user_type": "registered",
+                    "accept_rate": 43,
+                    "profile_image": "https://www.gravatar.com/avatar/1c3418846613290c6300016cea243ba9?s=256&d=identicon&r=PG",
+                    "display_name": "sumeet",
+                    "link": "https://stackoverflow.com/users/685847/sumeet"
+                },
+                "is_answered": false,
+                "view_count": 12007,
+                "answer_count": 2,
+                "score": 30,
+                "last_activity_date": 1659056460,
+                "creation_date": 1510732886,
+                "last_edit_date": 1596687068,
+                "question_id": 47302166,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/47302166/how-to-integrate-google-lens-in-my-app",
+                "title": "How to integrate Google lens in my app?"
+            },
+            {
+                "tags": [
+                    "android",
+                    "crash",
+                    "samsung-mobile"
+                ],
+                "owner": {
+                    "reputation": 461,
+                    "user_id": 6382895,
+                    "user_type": "registered",
+                    "profile_image": "https://www.gravatar.com/avatar/3bc43e7c760964c2498b81697df9ec2d?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "Xc0d3r",
+                    "link": "https://stackoverflow.com/users/6382895/xc0d3r"
+                },
+                "is_answered": false,
+                "view_count": 3818,
+                "answer_count": 0,
+                "score": 27,
+                "last_activity_date": 1579034902,
+                "creation_date": 1539589779,
+                "last_edit_date": 1579034902,
+                "question_id": 52812033,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/52812033/getting-deadsystemexception-on-samsung-smg950u-android-8-0-0-and-sm-955-andro",
+                "title": "Getting DeadSystemException on Samsung SMG950U (Android 8.0.0) and SM 955 (Android 8.0.0)"
+            },
+            {
+                "tags": [
+                    "android"
+                ],
+                "owner": {
+                    "reputation": 23068,
+                    "user_id": 550471,
+                    "user_type": "registered",
+                    "accept_rate": 84,
+                    "profile_image": "https://i.stack.imgur.com/m8UlO.png?s=256&g=1",
+                    "display_name": "Someone Somewhere",
+                    "link": "https://stackoverflow.com/users/550471/someone-somewhere"
+                },
+                "is_answered": false,
+                "view_count": 8169,
+                "protected_date": 1637142184,
+                "answer_count": 0,
+                "score": 27,
+                "last_activity_date": 1637140604,
+                "creation_date": 1530533221,
+                "question_id": 51135869,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/51135869/illegalargumentexception-reportsizeconfigurations-activityrecord-not-found-for",
+                "title": "IllegalArgumentException: reportSizeConfigurations: ActivityRecord not found for: Token"
+            },
+            {
+                "tags": [
+                    "java",
+                    "android",
+                    "keystore",
+                    "android-keystore"
+                ],
+                "owner": {
+                    "reputation": 9440,
+                    "user_id": 1090359,
+                    "user_type": "registered",
+                    "accept_rate": 78,
+                    "profile_image": "https://www.gravatar.com/avatar/a1b09fac4a9ec208ea4ed4d663b02ce2?s=256&d=identicon&r=PG",
+                    "display_name": "kspearrin",
+                    "link": "https://stackoverflow.com/users/1090359/kspearrin"
+                },
+                "is_answered": false,
+                "view_count": 2814,
+                "answer_count": 0,
+                "score": 27,
+                "last_activity_date": 1497063034,
+                "creation_date": 1497062729,
+                "last_edit_date": 1497063034,
+                "question_id": 44469020,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/44469020/androidkeystore-keypairgenerator-crashes-on-small-number-of-devices",
+                "title": "AndroidKeyStore KeyPairGenerator Crashes On Small Number of Devices"
+            },
+            {
+                "tags": [
+                    "android",
+                    "gradle",
+                    "configuration",
+                    "android-ndk"
+                ],
+                "owner": {
+                    "reputation": 1350,
+                    "user_id": 811748,
+                    "user_type": "registered",
+                    "accept_rate": 68,
+                    "profile_image": "https://www.gravatar.com/avatar/0fbb68b34e1f6ecc06a2095bdab7ef1b?s=256&d=identicon&r=PG",
+                    "display_name": "BoazGarty",
+                    "link": "https://stackoverflow.com/users/811748/boazgarty"
+                },
+                "is_answered": false,
+                "view_count": 6929,
+                "answer_count": 1,
+                "score": 27,
+                "last_activity_date": 1559939457,
+                "creation_date": 1478165352,
+                "last_edit_date": 1559939457,
+                "question_id": 40397930,
+                "content_license": "CC BY-SA 4.0",
+                "link": "https://stackoverflow.com/questions/40",
+                "title": "No symbol directories found - please check your native debug configuration"
+            },
+            {
+                "tags": [
+                    "android",
+                    "audio",
+                    "midi"
+                ],
+                "owner": {
+                    "reputation": 1599,
+                    "user_id": 4298143,
+                    "user_type": "registered",
+                    "accept_rate": 76,
+                    "profile_image": "https://www.gravatar.com/avatar/6a1af2afc77a01b85f7f87f0fdfc4049?s=256&d=identicon&r=PG&f=1",
+                    "display_name": "Cody",
+                    "link": "https://stackoverflow.com/users/4298143/cody"
+                },
+                "is_answered": false,
+                "view_count": 856,
+                "answer_count": 0,
+                "score": 27,
+                "last_activity_date": 1464832505,
+                "creation_date": 1463200088,
+                "last_edit_date": 1495541867,
+                "question_id": 37222527,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/37222527/android-loading-custom-midi-instruments-dls-files-into-sonivox-eas",
+                "title": "Android: Loading Custom Midi Instruments DLS files into Sonivox EAS"
+            },
+            {
+                "tags": [
+                    "android",
+                    "chrome-custom-tabs"
+                ],
+                "owner": {
+                    "reputation": 7580,
+                    "user_id": 929075,
+                    "user_type": "registered",
+                    "accept_rate": 67,
+                    "profile_image": "https://i.stack.imgur.com/axDzG.png?s=256&g=1",
+                    "display_name": "Ion Aalbers",
+                    "link": "https://stackoverflow.com/users/929075/ion-aalbers"
+                },
+                "is_answered": false,
+                "view_count": 1517,
+                "answer_count": 0,
+                "score": 27,
+                "last_activity_date": 1453134409,
+                "creation_date": 1453134409,
+                "question_id": 34859497,
+                "content_license": "CC BY-SA 3.0",
+                "link": "https://stackoverflow.com/questions/34859497/chrome-custom-tabs-not-opening-other-apps",
+                "title": "Chrome custom tabs not opening other apps"
+            }
+        ],
+        "has_more": true,
+        "quota_max": 300,
+        "quota_remaining": 299
+    }
+]
