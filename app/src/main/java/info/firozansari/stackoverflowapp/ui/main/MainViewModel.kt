@@ -56,7 +56,7 @@ class MainViewModel @Inject constructor(private val stackoverflowRepository: Sta
                 _apiStatus.value = ApiStatus.LOADING
                 var apiResult = getQuestionDeferred.await()
                 _apiStatus.value = ApiStatus.DONE
-                _questions.value = apiResult.questionsList
+                _questions.value = apiResult.questionsList!!
             } catch (e: Exception) {
                 _apiStatus.value = ApiStatus.ERROR
                 _questions.value = ArrayList()
@@ -69,7 +69,7 @@ class MainViewModel @Inject constructor(private val stackoverflowRepository: Sta
     }
 
     fun displayQuestionDetailsComplete() {
-        _navigateToSelectedQuestion.value = null
+        //_navigateToSelectedQuestion.value = Question()
     }
 
     // Cancel the Coroutines Job
